@@ -1,0 +1,8 @@
+$primary: cadetblue;
+$danger: rgb(245, 27, 11);
+
+@import '~bootstrap/scss/bootstrap';
+
+input.error {
+    border: 1px solid rgb(209, 136, 136);
+}
