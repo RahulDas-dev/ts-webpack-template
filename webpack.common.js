@@ -1,6 +1,7 @@
 const path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
     devtool: 'eval-source-map',
@@ -9,7 +10,7 @@ module.exports = {
         rules: [
             {
                 test: /\.ts$/,
-                use: 'ts-loader',
+                use: ['ts-loader'],
                 include: [path.resolve(__dirname,'src')]
             },
             {
@@ -36,5 +37,6 @@ module.exports = {
         extensions: ['.ts', '.js']
     },
     plugins: [  new HtmlWebpackPlugin({template:"./src/template.html"}), 
-                new MiniCssExtractPlugin({filename: "[name].css"})    ]  
+                new MiniCssExtractPlugin({filename: "[name].css"}) ,
+                new ESLintPlugin({extensions: ['ts']})   ]  
 }

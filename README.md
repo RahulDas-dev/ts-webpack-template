@@ -7,3 +7,5 @@ Fearures
 * scss plugin
 * config dor dev and prod mode
 * cleaning build dir
+
+* Eslint for Typescript Code
