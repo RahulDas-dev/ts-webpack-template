@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/ParoRahul/ts-webpack-template.git"
   },
   "keywords": [
     "webpack",
@@ -18,7 +18,7 @@
   "scripts": {
     "serve": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js",
-    "lint": "eslint  --ext .ts"
+    "lint": "eslint  --ext .ts ."
   },
   "author": "Rahul Das",
   "license": "ISC",
