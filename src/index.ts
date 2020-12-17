@@ -1,4 +1,4 @@
-import "./style.scss"
+import './style.scss'
 import { getFormData, reportValidaty, addListerforError } from './form'
 
 const submitbtn = document.querySelector('button')
@@ -14,6 +14,5 @@ submitbtn?.addEventListener('click',(event: Event)=> {
         console.log(data)
     }
 })
-
 
 addListerforError(form!)
