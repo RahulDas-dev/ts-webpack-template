@@ -1,7 +1,7 @@
 {
-  "name": "electron_ts_template",
+  "name": "webpack_ts_template",
   "version": "1.0.0",
-  "description": "Typescript Electron template ",
+  "description": "WebPack Typescript template ",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -18,13 +18,13 @@
   "scripts": {
     "serve": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js",
-    "lint": "eslint -c .eslintrc.json --ext .ts"
+    "lint": "eslint  --ext .ts"
   },
   "author": "Rahul Das",
   "license": "ISC",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.8.2",
-    "@typescript-eslint/parser": "^4.8.2",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.3.0",
     "eslint": "^7.14.0",
