@@ -18,6 +18,7 @@
   "scripts": {
     "serve": "webpack-dev-server --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js",
+    "version": "webpack --version",
     "lint": "eslint  --ext .ts ."
   },
   "author": "Rahul Das",

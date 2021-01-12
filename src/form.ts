@@ -1,6 +1,4 @@
-export interface calccy{
-    strsName: string;
-}
+
 
 export const getFormData = (form: HTMLFormElement): { [prop:string]: string} => {
     // const inputs = form.querySelectorAll('input');
