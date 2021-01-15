@@ -10,9 +10,10 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.ts$/,
+                test: /(?!test\.)\.ts$/,
                 use: ['ts-loader'],
-                include: [path.resolve(__dirname,'src')]
+                include: [path.resolve(__dirname,'src')],
+                exclude: [path.resolve(__dirname,'test')]
             },
             {
                 test: /\.html$/i,
