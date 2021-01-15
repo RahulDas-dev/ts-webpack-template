@@ -1,7 +1,8 @@
-const path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const ESLintPlugin = require('eslint-webpack-plugin');
+const path = require('path')
+
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const ESLintPlugin = require('eslint-webpack-plugin')
 
 module.exports = {
     devtool: 'eval-source-map',

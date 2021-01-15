@@ -1,4 +1,6 @@
-import './style.scss'
+'use strict'
+
+import './media/style.scss'
 import { getFormData, reportValidaty, addListerforError } from './form'
 
 const submitbtn = document.querySelector('button')

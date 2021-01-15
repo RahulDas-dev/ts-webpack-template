@@ -5,7 +5,7 @@
       "node": true
     },
     "parser": "@typescript-eslint/parser",
-    "plugins": ["filenames","@typescript-eslint"],
+    "plugins": ["@typescript-eslint"],
     "extends": [
       "eslint:recommended",
       "plugin:@typescript-eslint/eslint-recommended",
@@ -17,7 +17,7 @@
     },
     "ignorePatterns": [ "build/*", "node_modules/*" ],
     "rules": {
-      "filenames/match-exported": [2,[null,"camel"]],
+      "filenames/match-exported": "off",
       "semi": ["error", "never"],
       "no-eval": ["error"],
       "no-var": ["error"],
