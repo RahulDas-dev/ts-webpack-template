@@ -38,7 +38,7 @@ module.exports = {
     resolve: {
         extensions: ['.ts', '.js']
     },
-    plugins: [  new HtmlWebpackPlugin({template:"./src/template.html"}), 
-                new MiniCssExtractPlugin({filename: "[name].css"}) ,
-                new ESLintPlugin({extensions: ['ts']})   ]  
+    plugins:[   new HtmlWebpackPlugin({template:"./src/template.html"}), 
+                new ESLintPlugin({extensions: ['ts']})   
+            ]  
 }

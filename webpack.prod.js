@@ -7,11 +7,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = merge (common, {
     mode: "production",
     output: {
-        filename: "bundle.[contentHash].js",
+        filename: "bundle.[contenthash].js",
         path: path.resolve(__dirname, "build"),
         publicPath: ''
     },
-    plugins: [  new MiniCssExtractPlugin({filename: "[name].[contentHash].css"}),
+    plugins: [  new MiniCssExtractPlugin({filename: "[name].[contenthash].css"}),
                 new CleanWebpackPlugin()
     ],
 })
