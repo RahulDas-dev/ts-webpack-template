@@ -23,7 +23,7 @@ export const reportValidaty = (form: HTMLFormElement): void => {
 
 export const addListerforError = ( form: HTMLFormElement ): void => {
     form.querySelectorAll('input').forEach( (element: HTMLInputElement )=>{
-       element.addEventListener('input',(_event)=>{           
+       element.addEventListener('input', (_event)=>{           
         element.classList.remove('error')
         element.classList.add('mb-4')
         if (element.nextElementSibling)

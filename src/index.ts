@@ -6,7 +6,7 @@ import { getFormData, reportValidaty, addListerforError } from './form'
 const submitbtn = document.querySelector('button')
 const form = document.querySelector('form')
     
-submitbtn?.addEventListener('click',(event: Event)=> {
+submitbtn?.addEventListener('click', (event: Event)=> {
     event.preventDefault()
     const form = document.querySelector('form')
     if (! form?.checkValidity() ){
@@ -20,6 +20,6 @@ submitbtn?.addEventListener('click',(event: Event)=> {
 addListerforError(form!)
 
 if(module.hot) {
-    console.log("HOT RELOAD ENABLED")
+    console.log('HOT RELOAD ENABLED')
 	module.hot.accept()
 }

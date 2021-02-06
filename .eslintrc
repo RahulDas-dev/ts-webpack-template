@@ -19,6 +19,8 @@
     "rules": {
       "filenames/match-exported": "off",
       "semi": ["error", "never"],
+      "comma-spacing": ["error", { "before": false, "after": true }],
+      "quotes": ["error", "single"],
       "no-eval": ["error"],
       "no-var": ["error"],
       "no-use-before-define": "off",
