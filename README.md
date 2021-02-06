@@ -17,4 +17,5 @@ Webpack Plug in
 
 # Hot Reload
 
-### Testing With Mocha & Chai --> Work in Progress
+### To do List 
+* Testing With Mocha & Chai 
