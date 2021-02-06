@@ -10,3 +10,10 @@ $danger: rgb(245, 27, 11);
 input.error {
     border: 1px solid rgb(209, 136, 136);
 }
+.main-div{
+    background-color: rgb(185, 211, 214);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+

@@ -18,3 +18,8 @@ submitbtn?.addEventListener('click',(event: Event)=> {
 })
 
 addListerforError(form!)
+
+if(module.hot) {
+    console.log("HOT RELOAD ENABLED")
+	module.hot.accept()
+}

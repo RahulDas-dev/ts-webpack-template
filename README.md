@@ -13,4 +13,8 @@ Webpack Plug in
 
 # Bootstrap + Material icons
 
-# Testing with Mocha [Report - mochawesome] & Chai
+# Eslint for Typescript
+
+# Hot Reload
+
+### Testing With Mocha & Chai --> Work in Progress
