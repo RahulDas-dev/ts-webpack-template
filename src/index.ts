@@ -19,6 +19,12 @@ submitbtn?.addEventListener('click', (event: Event)=> {
 
 addListerforError(form!)
 
+const foo = (name: string) => {
+    console.log(name)
+}
+
+foo(' Rahul das ....')
+
 if(module.hot) {
     console.log('HOT RELOAD ENABLED')
 	module.hot.accept()

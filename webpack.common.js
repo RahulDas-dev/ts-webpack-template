@@ -11,9 +11,9 @@ module.exports = {
         rules: [
             {
                 test: /(?!test\.)\.ts$/,
-                use: ['ts-loader'],
-                include: [path.resolve(__dirname,'src')],
-                exclude: [path.resolve(__dirname,'test')]
+                use: ['babel-loader', 'ts-loader'],
+                include: [path.resolve(__dirname, 'src')],
+                exclude: [path.resolve(__dirname, 'test'), path.resolve(__dirname, 'node_modules') ]
             },
             {
                 test: /\.html$/i,
@@ -22,10 +22,10 @@ module.exports = {
             {
                 test: /\.(eot|otf|ttf|woff|woff2|svg|png|jpeg)$/i,
                 use: {
-                    loader: "file-loader",
+                    loader: 'file-loader',
                     options: {
-                        name: "[name].[hash].[ext]",
-                        outputPath: "images"
+                        name: '[name].[hash].[ext]',
+                        outputPath: 'images'
                     }
                 }
             },
@@ -38,7 +38,7 @@ module.exports = {
     resolve: {
         extensions: ['.ts', '.js']
     },
-    plugins:[   new HtmlWebpackPlugin({template:"./src/template.html"}), 
+    plugins:[   new HtmlWebpackPlugin({template:'./src/template.html'}), 
                 new ESLintPlugin({extensions: ['ts']})   
             ]  
 }
