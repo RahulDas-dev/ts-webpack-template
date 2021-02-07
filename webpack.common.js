@@ -1,7 +1,7 @@
 const path = require('path')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+/* const MiniCssExtractPlugin = require('mini-css-extract-plugin') */
 const ESLintPlugin = require('eslint-webpack-plugin')
 
 module.exports = {
@@ -28,10 +28,6 @@ module.exports = {
                         outputPath: 'images'
                     }
                 }
-            },
-            {
-                test: /\.scss$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             }
         ]
     },
