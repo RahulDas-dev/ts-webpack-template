@@ -11,6 +11,16 @@ module.exports = merge (common, {
             {
                 test: /\.scss$/,
                 use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+            },
+            {
+                test: /\.(eot|otf|ttf|woff|woff2|svg|png|jpeg)$/i,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[contenthash].[ext]',
+                        outputPath: 'images'
+                    }
+                }
             }
         ]
     },

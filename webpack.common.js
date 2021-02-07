@@ -18,16 +18,6 @@ module.exports = {
             {
                 test: /\.html$/i,
                 use: ['html-loader'],
-            },
-            {
-                test: /\.(eot|otf|ttf|woff|woff2|svg|png|jpeg)$/i,
-                use: {
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[hash].[ext]',
-                        outputPath: 'images'
-                    }
-                }
             }
         ]
     },
