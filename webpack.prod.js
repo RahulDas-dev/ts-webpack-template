@@ -10,10 +10,18 @@ module.exports = merge (common, {
         rules: [
             {
                 test: /\.scss$/,
-                use: [ MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
+                use: [ MiniCssExtractPlugin.loader, 
+                    {loader: 'css-loader'   },
+                    {loader: 'postcss-loader',
+                     options: { postcssOptions:
+                        { 
+                            config: path.resolve(__dirname, 'postcss.config.js')
+                        }}
+                    }, 
+                    {loader: 'sass-loader'    } ],
             },
             {
-                test: /\.(svg|png|PNG|jpeg|jpg)$/i,
+                test: /\.(woff|woff2|eot|ttf|otf|svg|png|PNG|jpeg|jpg)$/i,
                 use: {
                     loader: 'file-loader',
                     options: {

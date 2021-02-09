@@ -2,6 +2,7 @@
 
 import './media/style.scss'
 import { getFormData, reportValidaty, addListerforError } from './form'
+/* import { tail } from './common/array' */
 
 const submitbtn = document.querySelector('button') as HTMLButtonElement
 const form = document.querySelector('form') as HTMLFormElement

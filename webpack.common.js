@@ -19,18 +19,12 @@ module.exports = {
                 test: /\.html$/i,
                 use: ['html-loader'],
             },
-            {
-                test: /\.(eot|ttf|woff|woff2)$/i,
+            /* {
+                test: /\.(woff|woff2)$/i,
                 use: {
                     loader: 'url-loader',
                 },
-            },
-            {
-                test: /\.(eot|ttf|otf)$/i,
-                use: {
-                    loader: 'file-loader',
-                },
-            }
+            }, */
         ]
     },
     resolve: {
