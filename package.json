@@ -60,7 +60,10 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+    "autoprefixer": "^10.2.4",
     "bootstrap": "^4.6.0",
-    "material-icons": "^0.5.3"
+    "material-icons": "^0.5.3",
+    "postcss-loader": "^5.0.0",
+    "postcss-preset-env": "^6.7.0"
   }
 }

@@ -1,4 +1,5 @@
 
+'use strict'
 
 export const getFormData = (form: HTMLFormElement): { [prop:string]: string} => {
     // const inputs = form.querySelectorAll('input');
@@ -14,7 +15,7 @@ export const reportValidaty = (form: HTMLFormElement): void => {
         if ( !element.checkValidity() ) {
             element.classList.add('error')
             element.classList.remove('mb-4')
-            console.dir(element.validationMessage)
+            //console.dir(element.validationMessage)
             if (element.nextElementSibling)
                 element.nextElementSibling.innerHTML = `<small>${element.validationMessage}</small>`
         }
