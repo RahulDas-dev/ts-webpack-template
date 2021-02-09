@@ -11,7 +11,7 @@ Webpack Plug in
 
 
 
-# Bootstrap + Material icons
+# Bootstrap + Bootstrap icons
 
 # Eslint for Typescript
 
