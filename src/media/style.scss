@@ -1,33 +1,21 @@
-/* $material-icons-font-path: '~material-icons/iconfont/';
- 
-@import '~material-icons/iconfont/material-icons.scss'; */
-
-@import '~bootstrap-icons/font/bootstrap-icons.css';
+/* @import "~bootstrap-icons/font/bootstrap-icons.css"; */
 
 $primary: cadetblue;
 $danger: rgb(245, 27, 11);
 
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
 input.error {
-    border: 1px solid rgb(209, 136, 136);
+  border: 1px solid rgb(209, 136, 136);
 }
-body{
-    background-color: rgb(116, 147, 151);
-    display: grid;
-    place-items: center;
-    height: 100vh;
+body {
+  background-color: rgb(186, 224, 208);
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
-
-/* .bi::before {
-    display: inline-block;
-    content: "";
-    background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z' clip-rule='evenodd'/></svg>");
-    background-repeat: no-repeat;
-    background-size: 1rem 1rem;
-  } */
